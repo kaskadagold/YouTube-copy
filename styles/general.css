@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: Roboto, Arial;
     height: 8000px;
+    background-color: white;
 }
 
 button {
