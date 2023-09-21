@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-family: Roboto, Arial;
+    height: 8000px;
+}
+
+button {
+    font-family: Roboto, Arial;
+}
+
+main {
+    margin-left: 99px;
+    margin-right: 99px;
+    min-width: 640px;
+    min-height: 480px;
+    margin-top: 80px;
+}
+
+.main-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.video-part {
+    display: flex;
+    flex-direction: column;
+}

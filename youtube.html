@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YouTube Video</title>
+
+    <link rel="stylesheet" href="styles/header-bar.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/video-description.css">
+    <link rel="stylesheet" href="styles/comments.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/youtube-sans" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Верхняя часть сайта с поисковой строкой -->
+    <header class="header-bar">
+        <div class="header-bar-left-part">
+            <button class="hamburger-menu-button">
+                <img class="header-bar-icon" src="icons/hamburger-menu.svg">
+            </button>
+
+            <a class="homepage-button" href="https://www.youtube.com/">
+                <img class="youtube-logo" src="icons/youtube-logo.svg">
+            </a>
+
+        </div>
+
+        <div class="header-bar-central-part">
+            <div class="search-bar">
+                <input class="search" type="text" placeholder="Введите запрос">
+                <img class="keyboard-icon" src="icons/keyboard.png">
+            </div>
+
+            <button class="search-button">
+                <img class="header-bar-icon" src="icons/search.svg">
+
+                <div class="tooltip">
+                    Введите запрос
+                </div>
+            </button>
+
+
+
+            <button class="voice-search-button">
+                <img class="header-bar-icon" src="icons/voice-search-icon.svg">
+
+                <div class="tooltip">
+                    Голосовой поиск
+                </div>
+            </button>
+        </div>
+
+        <div class="header-bar-right-part">
+            <button class="upload-button">
+                <img class="header-bar-icon" src="icons/upload.svg">
+
+                <div class="tooltip">
+                    Создать
+                </div>
+            </button>
+
+            <button class="notification-button">
+                <img class="header-bar-icon" src="icons/notifications.svg">
+
+                <div class="tooltip">
+                    Уведомления
+                </div>
+            </button>
+
+            <div class="my-profile-button-container">
+                <button class="my-profile-button">
+                    <img class="user-image" src="exercises/moscow.png">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <!-- Левая часть страницы, содержащая видео -->
+            <div class="video-part">
+                <!-- Видео с кнопками -->
+                <div class="video">
+                    <div class="watch-line"></div>
+
+                    <div class="video-bar">
+                        <div class="video-bar-left-part">
+                            <button class="play-button">
+                                <img class="video-bar-icon" src="icons/play.png">
+
+                                <div class="tooltip">
+                                    Смотреть (k)
+                                </div>
+                            </button>
+
+                            <button class="next-play-button">
+                                <img class="video-bar-icon" src="icons/go-to-end.png">
+
+                                <div class="tooltip">
+                                    <div class="next-play-thumbnail">
+                                        <img class="next-play-thumbnail-image" src="thumbnails/kurils.webp">
+
+                                        <div class="next-play-time">
+                                            1:12:05
+                                        </div>
+                                    </div>
+
+                                    <div class="next-play-description">
+                                        <div class="next-play-hotkey">
+                                            СЛЕДУЮЩЕЕ (SHIFT+N)
+                                        </div>
+
+                                        <div class="next-play-name">
+                                            Курильские острова
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+
+                            <button class="volume-button">
+                                <img class="video-bar-icon" src="icons/volume.png">
+
+                                <div class="tooltip">
+                                    Отключение звука (m)
+                                </div>
+                            </button>
+
+                            <div class="what-time">
+                                0:00 / 54:39
+                            </div>
+                        </div>
+
+                        <div class="video-bar-right-part">
+                            <button class="autoplay-button">
+                                <img class="video-bar-icon" src="icons/autoplay.png">
+
+                                <div class="tooltip">
+                                    Автовоспроизведение включено
+                                </div>
+                            </button>
+
+                            <button class="subtitle-button">
+                                <img class="video-bar-icon" src="icons/subtitles.png">
+
+                                <div class="tooltip">
+                                    Субтитры (c)
+                                </div>
+                            </button>
+
+                            <button class="settings-button">
+                                <img class="video-bar-icon" src="icons/settings.png">
+
+                                <div class="tooltip">
+                                    Настройки
+                                </div>
+                            </button>
+
+                            <button class="mini-player-button">
+                                <img class="video-bar-icon" src="icons/mini-player.png">
+
+                                <div class="tooltip">
+                                    Мини-проигрыватель (i)
+                                </div>
+                            </button>
+
+                            <button class="big-screen-button">
+                                <img class="video-bar-icon" src="icons/big-screen.png">
+
+                                <div class="tooltip">
+                                    Широкий экран (t)
+                                </div>
+                            </button>
+
+                            <button class="full-size-button">
+                                <img class="video-bar-icon" src="icons/full-size.png">
+
+                                <div class="tooltip">
+                                    Во весь экран (t)
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Информация о видео -->
+                <div class="info">
+                    <div class="video-name">
+                        Карелия удивительная и многогранная | Природа и история | Жизнь на острове | Полярники и мечтатели
+                    </div>
+
+                    <div class="channel-info">
+                        <div class="channel-info-left-part">
+                            <a class="author-image-button" href="https://www.youtube.com/@PavelMatveev">
+                                <img class="author-image" src="exercises/sea.jpg">
+                            </a>
+
+                            <div class="author-info">
+                                <a class="author-name-link" href="https://www.youtube.com/@PavelMatveev">
+                                    <div class="author-name">
+                                        Pavel Matveev
+                                    </div>
+                                </a>
+
+                                <div class="subscribers-number">
+                                    90,9 тыс. подписчиков
+                                </div>
+                            </div>                            
+
+                            <button class="subscribe-button">
+                                <div class="subscribe-button-text">
+                                    Подписаться
+                                </div>
+                            </button>
+
+                            <!-- <button class="already-subscribed-button">
+                                <img class="subscribe-button-notification" src="icons/notifications.svg">
+
+                                <div class="already-subscribed-button-text">
+                                    Вы подписаны
+                                </div>
+
+                                <img class="subscribe-button-more" src="icons/more-down.png">
+                            </button>                             -->
+                        </div>
+
+                        <div class="channel-info-right-part">
+                            <div class="like-dislike">
+
+                                <button class="like-button">
+                                    <img class="like-icon" src="icons/like.png">
+                                    <div class="like-number">
+                                        3,1 тыс.
+                                    </div>
+
+                                    <div class="tooltip">
+                                        Нравится
+                                    </div>
+                                </button>
+
+
+                                <button class="dislike-button">
+                                    <img class="dislike-icon" src="icons/dislike.png">
+
+                                    <div class="tooltip">
+                                        Не нравится
+                                    </div>
+                                </button>
+                            </div>
+
+                            <button class="share-button">
+                                <img class="share-icon" src="icons/share.png">
+
+                                <div class="share-text">
+                                    Поделиться
+                                </div>
+
+                                <div class="tooltip">
+                                    Поделиться
+                                </div>
+                            </button>
+
+                            <button class="make-clip-button">
+                                <img class="scissor-icon" src="icons/scissors.png">
+
+                                <div class="make-clip-text">
+                                    Создать клип
+                                </div>
+
+                                <div class="tooltip">
+                                    Создать клип
+                                </div>
+                            </button>
+
+                            <button class="more-button">
+                                &#183;&#183;&#183;
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Описание под видео -->
+                    <div class="description">
+                        <div class="statistics">
+                            <div class="views-number">157 тыс. просмотров</div>
+
+                            <div class="video-date">4 месяца назад</div>
+
+                            <div class="playlist">РЕСПУБЛИКА КАРЕЛИЯ</div>
+
+                            <div class="statistics-tooltip">
+                                158 086 просмотров &#183; 7 мар. 2023 г. &#183; РЕСПУБЛИКА КАРЕЛИЯ
+                            </div>
+                        </div>
+
+                        <div class="description-text">
+                            <p>
+                                Термос с кружкой Peakvil на Ozon:
+                                <a href="https://www.ozon.ru/product/termos-s-kruzhkoy-dlya-kofe-chaya-1l-matovyy-chernyy-dlya-goryachih-i-holodnyh-napitkov-696475880/?sh=9EbkDZ9pEA" target="_blank">
+                                    https://clck.ru/33Zd4f
+                                </a>
+                                Промокод PAVELMATVEEV даст скидку в 10%, действует до 31 августа.
+                            </p>
+
+                            <p class="description-next-paragraph">
+                                Скидка 5% по коду PAVEL до 20 апреля на все путешествия по Карелии и России от
+                                сообщества туроператоров «Большая Страна»
+                                <a href="https://bolshayastrana.com/tury?rid=TJU2uv" target="_blank">
+                                    https://bolshayastrana.com/tury?rid=T...
+                                </a>
+                                На выбор 5000 туров: авторские маршруты с проживанием и проработанной программой. Туры из реестра Ростуризма и без наценок агентств.
+
+                            </p>
+
+                            <button class="description-more-button">
+                                Ещё
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Часть с комментариями -->
+                <div class="comment-part">
+                    <!-- Общее количество комментарией и "введите комментарий" -->
+                    <div class="upper-comment-part">
+                        <div class="comment-part-statistics">
+                            <div class="comments-number">
+                                246 комментариев
+                            </div>
+
+                            <div class="order-comments">
+                                <img class="order-icon" src="icons/order.png">
+                                <div class="order-text">
+                                    Упорядочить
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="enter-comment">
+                            <div class="enter-comment-my-image-container">
+                                <img class="enter-comment-image" src="moscow.png">
+                            </div>
+
+                            <div class="enter-comment-part">
+                                <input class="enter-comment-bar" type="text" placeholder="Введите комментарий">
+
+                                <div class="enter-comment-bottom-part">
+                                    <button class="enter-part-choose-smiles-button">
+                                        <img class="smile" src="icons/smile.png">
+                                    </button>
+
+                                    <div class="enter-comment-bottom-part-buttons">
+                                        <button class="cancel-button">
+                                            Отмена
+                                        </button>
+
+                                        <button class="send-comment-button">
+                                            Оставить комментарий
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Блок комментариев -->
+                    <div class="main-comment-part">
+                        <!-- Комментарий (автора, закрепленный, с комментарием автора, без лайка автора) -->
+                        <div class="comment-container">
+                            <div class="user-image-container">
+                                <img class="enter-comment-image" src="exercises/sea.jpg">
+                            </div>
+
+                            <div class="right-comment-part">
+                                <div class="fixed-comment-container">
+                                    <img class="fixed-icon" src="icons/fixed.png">
+
+                                    <div class="fixed-comment-text">
+                                        Закреплено пользователем Pavel Matveev
+                                    </div>
+                                </div>
+
+                                <div class="author-comment">
+                                    <div class="author-comment-name">
+                                        @PavelMatveev
+                                    </div>
+
+                                    <div class="comment-time">
+                                        4 месяца назад
+                                    </div>
+                                </div>
+
+                                <p class="comment-text">
+                                    Отдельная благодарность всем, кто досмотрел до конца, и поставил лайк. =)
+                                </p>
+
+                                <div class="comment-reaction">
+                                    <button class="comment-like-button">
+                                        <img class="like-icon" src="icons/like.png">
+                                    </button>
+
+                                    <div class="comment-reaction-number">48</div>
+
+                                    <button class="comment-dislike-button">
+                                        <img class="dislike-icon" src="icons/dislike.png">
+                                    </button>
+
+                                    <button class="answer-button">
+                                        Ответить
+                                    </button>
+                                </div>
+
+                                <div class="comment-discussion-with-author">
+                                    <button class="comment-discussion-more-button">
+                                        <img class="discussion-more-icon" src="icons/more-down.png">
+                                    </button>
+                                    <div class="comment-discussion-author-reaction">
+                                        <img class="comment-discussion-author-image" src="exercises/sea.jpg">
+                                        <div class="author-middle-dot">&#183;</div>
+                                    </div>
+
+                                    <button class="number-comment-discussion-button">
+                                        17 ответов
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Комментарий (без комментария автора, с лайком автора) -->
+                        <div class="comment-container">
+                            <div class="user-image-container">
+                                <img class="enter-comment-image" src="exercises/mountain.jpg">
+                            </div>
+
+                            <div class="right-comment-part">
+                                <div class="user-comment">
+                                    <div class="user-comment-name">
+                                        @dmitrymitin9103
+                                    </div>
+
+                                    <div class="comment-time">
+                                        3 месяца назад
+                                    </div>
+                                </div>
+
+                                <p class="comment-text">
+                                    Павел, не знаю, позволяет ли Ваша деятельность зарабатывать на жизнь, но очень бы хотелось в это верить! У Вас редкий талант доносить красоту природы до не равнодушных людей. Вы настоящий современный художник и ценитель природы России и по моему мнению наше государство должно поддерживать таких людей как Вы! Успехов в Вашем деле!
+                                </p>
+
+                                <div class="comment-reaction">
+                                    <button class="comment-like-button">
+                                        <img class="like-icon" src="icons/like.png">
+                                    </button>
+
+                                    <div class="comment-reaction-number">14</div>
+
+                                    <button class="comment-dislike-button">
+                                        <img class="dislike-icon" src="icons/dislike.png">
+                                    </button>
+
+                                    <div class="author-like">
+                                        <img class="comment-discussion-author-image" src="exercises/sea.jpg">
+
+                                        <div class="author-like-heart">&#10084;</div>
+                                    </div>
+
+                                    <button class="answer-button">
+                                        Ответить
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Комментарий (без комментария автора, с лайком автора) -->
+                        <div class="comment-container">
+                            <div class="user-image-container">
+                                <img class="enter-comment-image" src="exercises/mountain.jpg">
+                            </div>
+
+                            <div class="right-comment-part">
+                                <div class="user-comment">
+                                    <div class="user-comment-name">
+                                        @rinatmiller4278
+                                    </div>
+
+                                    <div class="comment-time">
+                                        4 месяца назад
+                                    </div>
+                                </div>
+
+                                <p class="comment-text">
+                                    Павел, мне сложно подобрать слова, которые бы реально описывали мои эмоции после ваших работ. Мне ужасно отрадно, что есть такие люди, как вы, которые показывают нашу страну так вкусно, красиво, тонко, а что самое главное - с любовью! Необъятная благодарность вам!
+                                </p>
+
+                                <div class="comment-reaction">
+                                    <button class="comment-like-button">
+                                        <img class="like-icon" src="icons/like.png">
+                                    </button>
+
+                                    <div class="comment-reaction-number">51</div>
+
+                                    <button class="comment-dislike-button">
+                                        <img class="dislike-icon" src="icons/dislike.png">
+                                    </button>
+
+                                    <div class="author-like">
+                                        <img class="comment-discussion-author-image" src="exercises/sea.jpg">
+
+                                        <div class="author-like-heart">&#10084;</div>
+                                    </div>
+
+                                    <button class="answer-button">
+                                        Ответить
+                                    </button>
+                                </div>
+
+                                <div class="comment-discussion-without-author">
+                                    <button class="comment-discussion-button">
+                                        <img class="discussion-more-icon" src="icons/more-down.png">
+                                        <div class="number-comment-discussion">
+                                            4 ответа
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Комментарий (без комментария автора, с лайком автора) -->
+                        <div class="comment-container">
+                            <div class="user-image-container">
+                                <img class="enter-comment-image" src="exercises/mountain.jpg">
+                            </div>
+
+                            <div class="right-comment-part">
+                                <div class="user-comment">
+                                    <div class="user-comment-name">
+                                        @user-ip9mg7jk8o
+                                    </div>
+
+                                    <div class="comment-time">
+                                        3 месяца назад
+                                    </div>
+                                </div>
+
+                                <p class="comment-text">
+                                    Каждый житель Карелии скажет,что Карелию надо приезжать летом и ощутить прелесть ее лесов и озер! Но Павлу удалось показать Карелию прекрасной и зимой! И она не менее замечательна и в это время! Спасибо за фильм!
+                                </p>
+
+                                <div class="comment-reaction">
+                                    <button class="comment-like-button">
+                                        <img class="like-icon" src="icons/like.png">
+                                    </button>
+
+                                    <div class="comment-reaction-number">17</div>
+
+                                    <button class="comment-dislike-button">
+                                        <img class="dislike-icon" src="icons/dislike.png">
+                                    </button>
+
+                                    <div class="author-like">
+                                        <img class="comment-discussion-author-image" src="exercises/sea.jpg">
+
+                                        <div class="author-like-heart">&#10084;</div>
+                                    </div>
+
+                                    <button class="answer-button">
+                                        Ответить
+                                    </button>
+                                </div>
+
+                                <div class="comment-discussion-without-author">
+                                    <button class="comment-discussion-button">
+                                        <img class="discussion-more-icon" src="icons/more-down.png">
+                                        <div class="number-comment-discussion">
+                                            1 ответ
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Комментарий (без комментарий автора, с лайком автора) -->
+                        <div class="comment-container">
+                            <div class="user-image-container">
+                                <img class="enter-comment-image" src="exercises/mountain.jpg">
+                            </div>
+
+                            <div class="right-comment-part">
+                                <div class="user-comment">
+                                    <div class="user-comment-name">
+                                        @moxyfpxy8670
+                                    </div>
+
+                                    <div class="comment-time">
+                                        3 месяца назад
+                                    </div>
+                                </div>
+
+                                <p class="comment-text">
+                                    Какой замечательный молодой человек. Какой голос. Выпуски достойные телевидения. Супер! Смотрели с мужем, нам очень понравилось. Сами из Петрозаводска, было очень интересно узнать о родной Карелии. Спасибо за ваш труд. ❤
+                                </p>
+
+                                <div class="comment-reaction">
+                                    <button class="comment-like-button">
+                                        <img class="like-icon" src="icons/like.png">
+                                    </button>
+
+                                    <div class="comment-reaction-number">13</div>
+
+                                    <button class="comment-dislike-button">
+                                        <img class="dislike-icon" src="icons/dislike.png">
+                                    </button>
+
+                                    <div class="author-like">
+                                        <img class="comment-discussion-author-image" src="exercises/sea.jpg">
+
+                                        <div class="author-like-heart">&#10084;</div>
+                                    </div>
+
+                                    <button class="answer-button">
+                                        Ответить
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Комментарий (без комментария автора, с лайком автора) -->
+                        <div class="comment-container">
+                            <div class="user-image-container">
+                                <img class="enter-comment-image" src="exercises/mountain.jpg">
+                            </div>
+
+                            <div class="right-comment-part">
+                                <div class="user-comment">
+                                    <div class="user-comment-name">
+                                        @user-oc2zo4wd6j
+                                    </div>
+
+                                    <div class="comment-time">
+                                        3 месяца назад
+                                    </div>
+                                </div>
+
+                                <p class="comment-text">
+                                    Огромное спасибо за путешествия по России! Какие же прекрасные края в этой стране! )
+                                </p>
+
+                                <div class="comment-reaction">
+                                    <button class="comment-like-button">
+                                        <img class="like-icon" src="icons/like.png">
+                                    </button>
+
+                                    <div class="comment-reaction-number">3</div>
+
+                                    <button class="comment-dislike-button">
+                                        <img class="dislike-icon" src="icons/dislike.png">
+                                    </button>
+
+                                    <div class="author-like">
+                                        <img class="comment-discussion-author-image" src="exercises/sea.jpg">
+
+                                        <div class="author-like-heart">&#10084;</div>
+                                    </div>
+
+                                    <button class="answer-button">
+                                        Ответить
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <button class="all-video-button">
+                        Все видео
+                    </button>
+
+                    <button class="sidebar-header-author">
+                        Автор: Pavel Matveev
+                    </button>
+
+                    <button class="sidebar-header-first-category">
+                        Поездки: Республика Карелия
+                    </button>
+
+                    <div class="go-to-right-container">
+                        <button class="go-to-right">
+                            >
+                        </button>
+                    </div>
+                </div>
+
+                <div class="video-section">
+                    <!-- Боковое видео-превью -->
+                    <a href="https://www.youtube.com/watch?v=h4BvPVCE3pI">
+                        <div class="sidebar-video-container">
+                            <div class="sidebar-video">
+                                <img class="sidebar-video-thumbnail" src="thumbnails/kurils.webp">
+
+                                <div class="sidebar-video-time">
+                                    1:12:05
+                                </div>
+
+                                <div class="sidebar-video-watchline"></div>
+
+                                <button class="watch-later-button">
+                                    <img class="watch-later-icon" src="icons/watch-later.png">
+                                </button>
+
+                                <button class="add-to-queue-button">
+                                    <img class="add-to-queue-icon" src="icons/add-to-queue.png">
+                                </button>
+
+                                <img class="sidebar-video-play-icon" src="icons/play_black.png">
+                            </div>
+
+                            <div class="sidebar-video-description">
+                                <div class="sidebar-video-name">
+                                    <!-- Курильские острова | Сахалин | Путешествие на Край Света...? -->
+                                    Курильские острова | Сахалин | Путешествие на Край Света | Путешествия по России | Дикая природа
+                                </div>
+
+                                <div class="sidebar-video-author">
+                                    Pavel Matveev
+                                </div>
+
+                                <div class="sidebar-video-statistics">
+                                    777 тыс. просмотров 
+                                    <span class="sidebar-video-middle-dot">&#183;</span> 
+                                    2 года назад
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    
+                    <!-- Боковое видео-превью -->
+                    <a href="https://www.youtube.com/watch?v=y62u0CyzhEI">
+                        <div class="sidebar-video-container">
+                            <div class="sidebar-video">
+                                <img class="sidebar-video-thumbnail" src="thumbnails/thumbnail3.webp">
+
+                                <div class="sidebar-video-time">
+                                    38:55
+                                </div>
+
+                                <button class="watch-later-button">
+                                    <img class="watch-later-icon" src="icons/watch-later.png">
+                                </button>
+
+                                <button class="add-to-queue-button">
+                                    <img class="add-to-queue-icon" src="icons/add-to-queue.png">
+                                </button>
+
+                                <img class="sidebar-video-play-icon" src="icons/play_black.png">
+                            </div>
+
+                            <div class="sidebar-video-description">
+                                <div class="sidebar-video-name">
+                                    Красивый обзор всего полуострова Крым | Путешествие на машине
+                                </div>
+
+                                <div class="sidebar-video-author">
+                                    Pavel Matveev
+                                </div>
+
+                                <div class="sidebar-video-statistics">
+                                    659 тыс. просмотров 
+                                    <span class="sidebar-video-middle-dot">&#183;</span> 
+                                    2 года назад
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    
+
+                    <!-- Боковое видео-превью -->
+                    <a href="https://www.youtube.com/watch?v=KSONJm5a1oU">
+                        <div class="sidebar-video-container">
+                            <div class="sidebar-video">
+                                <img class="sidebar-video-thumbnail" src="thumbnails/thumbnail1.webp">
+
+                                <div class="sidebar-video-time">
+                                    44:26
+                                </div>
+
+                                <button class="watch-later-button">
+                                    <img class="watch-later-icon" src="icons/watch-later.png">
+                                </button>
+
+                                <button class="add-to-queue-button">
+                                    <img class="add-to-queue-icon" src="icons/add-to-queue.png">
+                                </button>
+
+                                <img class="sidebar-video-play-icon" src="icons/play_black.png">
+                            </div>
+
+                            <div class="sidebar-video-description">
+                                <div class="sidebar-video-name">
+                                    Нижний Новгород | Путешествие в столицу закатов
+                                </div>
+
+                                <div class="sidebar-video-author">
+                                    Pavel Matveev
+                                </div>
+
+                                <div class="sidebar-video-statistics">
+                                    264 тыс. просмотров 
+                                    <span class="sidebar-video-middle-dot">&#183;</span> 
+                                    9 месяцев назад
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    
+
+                    <!-- Боковое видео-превью -->
+                    <a href="https://www.youtube.com/watch?v=Sdfjy4zVQcQ">
+                        <div class="sidebar-video-container">
+                            <div class="sidebar-video">
+                                <img class="sidebar-video-thumbnail" src="thumbnails/thumbnail4.webp">
+
+                                <div class="sidebar-video-time">
+                                    50:33
+                                </div>
+
+                                <button class="watch-later-button">
+                                    <img class="watch-later-icon" src="icons/watch-later.png">
+                                </button>
+
+                                <button class="add-to-queue-button">
+                                    <img class="add-to-queue-icon" src="icons/add-to-queue.png">
+                                </button>
+
+                                <img class="sidebar-video-play-icon" src="icons/play_black.png">
+                            </div>
+
+                            <div class="sidebar-video-description">
+                                <div class="sidebar-video-name">
+                                    Где увидеть северное сияние | Кольский | Териберка | Карелия | Путешествие на машине
+                                </div>
+
+                                <div class="sidebar-video-author">
+                                    Pavel Matveev
+                                </div>
+
+                                <div class="sidebar-video-statistics">
+                                    114 тыс. просмотров 
+                                    <span class="sidebar-video-middle-dot">&#183;</span> 
+                                    2 года назад
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    
+
+                    <!-- Боковое видео-превью -->
+                    <a href="https://www.youtube.com/watch?v=DHKAI3fELP8">
+                        <div class="sidebar-video-container">
+                            <div class="sidebar-video">
+                                <img class="sidebar-video-thumbnail" src="thumbnails/thumbnail5.webp">
+
+                                <div class="sidebar-video-time">
+                                    55:15
+                                </div>
+
+                                <button class="watch-later-button">
+                                    <img class="watch-later-icon" src="icons/watch-later.png">
+                                </button>
+
+                                <button class="add-to-queue-button">
+                                    <img class="add-to-queue-icon" src="icons/add-to-queue.png">
+                                </button>
+
+                                <img class="sidebar-video-play-icon" src="icons/play_black.png">
+                            </div>
+
+                            <div class="sidebar-video-description">
+                                <div class="sidebar-video-name">
+                                    Кавказ: экстремально красиво, но очень доступно. | Фильм-путешествие | Кавказ – в объятьях облаков
+                                </div>
+
+                                <div class="sidebar-video-author">
+                                    Pavel Matveev
+                                </div>
+
+                                <div class="sidebar-video-statistics">
+                                    409 тыс. просмотров 
+                                    <span class="sidebar-video-middle-dot">&#183;</span> 
+                                    8 месяцев назад
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    
+
+                    <!-- Боковое видео-превью -->
+                    <a href="https://www.youtube.com/watch?v=WWvpGW3156U">
+                        <div class="sidebar-video-container">
+                            <div class="sidebar-video">
+                                <img class="sidebar-video-thumbnail" src="thumbnails/thumbnail6.webp">
+
+                                <div class="sidebar-video-time">
+                                    49:47
+                                </div>
+
+                                <button class="watch-later-button">
+                                    <img class="watch-later-icon" src="icons/watch-later.png">
+                                </button>
+
+                                <button class="add-to-queue-button">
+                                    <img class="add-to-queue-icon" src="icons/add-to-queue.png">
+                                </button>
+
+                                <img class="sidebar-video-play-icon" src="icons/play_black.png">
+                            </div>
+
+                            <div class="sidebar-video-description">
+                                <div class="sidebar-video-name">
+                                    Алтай – пробуждение природы | Все сезоны за неделю | Автопутешествие
+                                </div>
+
+                                <div class="sidebar-video-author">
+                                    Pavel Matveev
+                                </div>
+
+                                <div class="sidebar-video-statistics">
+                                    130 тыс. просмотров 
+                                    <span class="sidebar-video-middle-dot">&#183;</span> 
+                                    1 месяц назад
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    
+
+                    <!-- Боковое видео-превью -->
+                    <a href="https://www.youtube.com/watch?v=l4QNKoy6KJI">
+                        <div class="sidebar-video-container">
+                            <div class="sidebar-video">
+                                <img class="sidebar-video-thumbnail" src="thumbnails/thumbnail7.webp">
+
+                                <div class="sidebar-video-time">
+                                    32:37
+                                </div>
+
+                                <button class="watch-later-button">
+                                    <img class="watch-later-icon" src="icons/watch-later.png">
+                                </button>
+
+                                <button class="add-to-queue-button">
+                                    <img class="add-to-queue-icon" src="icons/add-to-queue.png">
+                                </button>
+
+                                <img class="sidebar-video-play-icon" src="icons/play_black.png">
+                            </div>
+
+                            <div class="sidebar-video-description">
+                                <div class="sidebar-video-name">
+                                    Неизведанные Курильские острова | Вулканы недосягаемости | Фильм-путешествие по России
+                                </div>
+
+                                <div class="sidebar-video-author">
+                                    Pavel Matveev
+                                </div>
+
+                                <div class="sidebar-video-statistics">
+                                    216 тыс. просмотров 
+                                    <span class="sidebar-video-middle-dot">&#183;</span> 
+                                    1 год назад
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    
+
+                    <!-- Боковое видео-превью -->
+                    <a href="https://www.youtube.com/watch?v=1y4W5BWwd9g">
+                        <div class="sidebar-video-container">
+                            <div class="sidebar-video">
+                                <img class="sidebar-video-thumbnail" src="thumbnails/thumbnail8.webp">
+
+                                <div class="sidebar-video-time">
+                                    18:16
+                                </div>
+
+                                <button class="watch-later-button">
+                                    <img class="watch-later-icon" src="icons/watch-later.png">
+                                </button>
+
+                                <button class="add-to-queue-button">
+                                    <img class="add-to-queue-icon" src="icons/add-to-queue.png">
+                                </button>
+
+                                <img class="sidebar-video-play-icon" src="icons/play_black.png">
+                            </div>
+
+                            <div class="sidebar-video-description">
+                                <div class="sidebar-video-name">
+                                    Путешествие на Русский Север | Архангельская область | Северные Каньоны
+                                </div>
+
+                                <div class="sidebar-video-author">
+                                    Pavel Matveev
+                                </div>
+
+                                <div class="sidebar-video-statistics">
+                                    71 тыс. просмотров 
+                                    <span class="sidebar-video-middle-dot">&#183;</span> 
+                                    1 год назад
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    
+
+                    <!-- Боковое видео-превью -->
+                    <a href="https://www.youtube.com/watch?v=kZbF_kb12nU">
+                        <div class="sidebar-video-container">
+                            <div class="sidebar-video">
+                                <img class="sidebar-video-thumbnail" src="thumbnails/thumbnail9.webp">
+
+                                <div class="sidebar-video-time">
+                                    30:50
+                                </div>
+
+                                <button class="watch-later-button">
+                                    <img class="watch-later-icon" src="icons/watch-later.png">
+                                </button>
+
+                                <button class="add-to-queue-button">
+                                    <img class="add-to-queue-icon" src="icons/add-to-queue.png">
+                                </button>
+
+                                <img class="sidebar-video-play-icon" src="icons/play_black.png">
+                            </div>
+
+                            <div class="sidebar-video-description">
+                                <div class="sidebar-video-name">
+                                    Невероятный северный Сахалин | Дикая природа, походы и рыбалка | Путешествие по России
+                                </div>
+
+                                <div class="sidebar-video-author">
+                                    Pavel Matveev
+                                </div>
+
+                                <div class="sidebar-video-statistics">
+                                    741 тыс. просмотров 
+                                    <span class="sidebar-video-middle-dot">&#183;</span> 
+                                    1 год назад
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    
+
+                    <!-- Боковое видео-превью -->
+                    <a href="https://www.youtube.com/watch?v=vz2NL8f4O_Q">
+                        <div class="sidebar-video-container">
+                            <div class="sidebar-video">
+                                <img class="sidebar-video-thumbnail" src="thumbnails/thumbnail10.webp">
+
+                                <div class="sidebar-video-time">
+                                    36:00
+                                </div>
+
+                                <button class="watch-later-button">
+                                    <img class="watch-later-icon" src="icons/watch-later.png">
+                                </button>
+
+                                <button class="add-to-queue-button">
+                                    <img class="add-to-queue-icon" src="icons/add-to-queue.png">
+                                </button>
+
+                                <img class="sidebar-video-play-icon" src="icons/play_black.png">
+                            </div>
+
+                            <div class="sidebar-video-description">
+                                <div class="sidebar-video-name">
+                                    Топ мест России для путешествий - путеводитель, куда поехать в отпуск | Самая красивая природа
+                                </div>
+
+                                <div class="sidebar-video-author">
+                                    Pavel Matveev
+                                </div>
+
+                                <div class="sidebar-video-statistics">
+                                    43 тыс. просмотров 
+                                    <span class="sidebar-video-middle-dot">&#183;</span> 
+                                    2 недели назад
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    
+
+                    <!-- Боковое видео-превью -->
+                    <a href="https://www.youtube.com/watch?v=l4QNKoy6KJI">
+                        <div class="sidebar-video-container">
+                            <div class="sidebar-video">
+                                <img class="sidebar-video-thumbnail" src="thumbnails/thumbnail11.webp">
+
+                                <div class="sidebar-video-time">
+                                    41:39
+                                </div>
+
+                                <button class="watch-later-button">
+                                    <img class="watch-later-icon" src="icons/watch-later.png">
+                                </button>
+
+                                <button class="add-to-queue-button">
+                                    <img class="add-to-queue-icon" src="icons/add-to-queue.png">
+                                </button>
+
+                                <img class="sidebar-video-play-icon" src="icons/play_black.png">
+                            </div>
+
+                            <div class="sidebar-video-description">
+                                <div class="sidebar-video-name">
+                                    Владивосток и Приморье | Большое путешествие на Дальний Восток
+                                </div>
+
+                                <div class="sidebar-video-author">
+                                    Pavel Matveev
+                                </div>
+
+                                <div class="sidebar-video-statistics">
+                                    339 тыс. просмотров 
+                                    <span class="sidebar-video-middle-dot">&#183;</span> 
+                                    1 год назад
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+             </div>
+    </main>
+
+</body>
+
+</html>

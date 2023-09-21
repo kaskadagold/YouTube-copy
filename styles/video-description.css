@@ -1,0 +1,383 @@
+.info {
+    margin-top: 15px;
+    max-width: 1280px;
+}
+
+.video-name {
+    font-size: 17.4px;
+    font-weight: 500;
+    font-family: Youtube Sans, Roboto, Arial;
+    letter-spacing: 0.6px;
+}
+
+.channel-info {
+    margin-top: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.channel-info-left-part {
+    display: grid;
+    grid-template-columns: 42px 165px 1fr;
+    vertical-align: center;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 10px;
+}
+
+.author-info a:any-link {
+    color: black;
+    text-decoration: none;
+}
+
+.author-name {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.subscribers-number {
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+    margin-top: 4px;
+}
+
+.author-image-button {
+    aspect-ratio: 1;
+    padding: 0;
+    width: 100%;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+.author-image {
+    width: 38px;
+    height: 38px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.subscribe-button {
+    background-color: black;
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+    height: 36px;
+    padding: 0px 16px;
+    cursor: pointer;
+}
+
+.subscribe-button:hover {
+    background-color: rgb(41, 41, 41);
+}
+
+.subscribe-button:active {
+    background-color: rgb(71, 71, 71);
+}
+
+/* .already-subscribed-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 5px 0 3px;
+    border-radius: 20px;
+    border: none;
+    height: 35px;
+    background-color: rgb(240, 240, 240);
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.already-subscribed-button:hover {
+    background-color: rgb(225, 225, 225);
+}
+
+.already-subscribed-button:active {
+    background-color: rgb(210, 210, 210);
+}
+
+.already-subscribed-button-text {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 2px;
+}
+
+.subscribe-button-notification {
+    width: 24px;
+}
+
+.subscribe-button-more {
+    width: 16px;
+} */
+
+.channel-info-right-part {
+    display: grid;
+    grid-template-columns: 160px 135px 150px 35px;
+    column-gap: 8px;
+    height: 40px;
+}
+
+.like-dislike {
+    height: 36px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    background-color: grey;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(240, 240, 240);
+}
+
+.like-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px 0 10px;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 23px;
+    background-color: rgb(243, 243, 243);
+    cursor: pointer;
+    position: relative;
+}
+
+.like-number {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 7px;
+}
+
+.like-icon,
+.dislike-icon {
+    width: 20px;
+}
+
+.dislike-button {
+    padding: 0;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-left: 1.5px solid black;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-color: rgb(198, 198, 198);
+    margin-left: -1px;
+    background-color: rgb(243, 243, 243);
+    cursor: pointer;
+    position: relative;
+}
+
+.share-button {
+    display: flex;
+    flex-direction: row;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(243, 243, 243);
+    cursor: pointer;
+    position: relative;
+}
+
+.share-icon {
+    width: 25px;
+}
+
+.share-text {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.make-clip-button {
+    display: flex;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(243, 243, 243);
+    cursor: pointer;
+    position: relative;
+}
+
+.scissor-icon {
+    width: 24px;
+}
+
+.make-clip-text {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.more-button {
+    height: 36px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(243, 243, 243);
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.like-button:hover,
+.dislike-button:hover,
+.make-clip-button:hover,
+.share-button:hover,
+.more-button:hover,
+.description:hover {
+    background-color: rgb(225, 225, 225);
+}
+
+.like-button:active,
+.dislike-button:active,
+.make-clip-button:active,
+.share-button:active,
+.more-button:active,
+.description:active {
+    background-color: rgb(210, 210, 210);
+}
+
+.like-button .tooltip,
+.dislike-button .tooltip,
+.share-button .tooltip,
+.make-clip-button .tooltip {
+    position: absolute;
+    bottom: -50px;
+    padding: 10px 8px;
+    font-size: 12px;
+    font-family: Roboto, Arial;
+    color: white;
+    background-color: rgba(90, 90, 90, 0.9);
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.like-button:hover .tooltip,
+.dislike-button:hover .tooltip,
+.share-button:hover .tooltip,
+.make-clip-button:hover .tooltip {
+    opacity: 1;
+}
+
+.description {
+    margin-top: 11px;
+    --class-item-bg: 243, 243, 243;
+    background-color: rgb(var(--class-item-bg));
+    padding: 13px 12px;
+    border: none;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.description:hover {
+    --class-item-bg: 225, 225, 225;
+}
+
+.description:active {
+    --class-item-bg: 210, 210, 210;
+}
+
+.statistics {
+    display: flex;
+    column-gap: 7px;
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 3px;
+    position: relative;
+}
+
+.statistics-tooltip {
+    position: absolute;
+    bottom: -57px;
+    color: white;
+    font-weight: 500;
+    background-color: rgba(90, 90, 90, 0.9);
+    padding: 10px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.statistics:hover .statistics-tooltip {
+    opacity: 1;
+}
+
+.playlist {
+    color: rgb(100, 100, 100);
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    margin-top: 1px;
+    font-size: 14px;
+}
+
+.description-next-paragraph {
+    margin-top: 23px;
+    min-width: min(450px, 100%);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.description-text a:any-link {
+    color: rgb(0, 110, 255);
+    text-decoration: none;
+}
+
+.description-text {
+    position: relative;
+}
+
+.description-more-button {
+    position: absolute;
+    bottom: -5px;
+    /* right: 175px; */
+    right: -10px;
+    font-family: Roboto, Arial;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(var(--class-item-bg), 0.85);
+}
+
+.comment-part {
+    margin-top: 15px;
+    background-color: black;
+    flex: 1;
+    color: white;
+}

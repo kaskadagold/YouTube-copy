@@ -1,0 +1,180 @@
+.video {
+    position: relative;
+    background-color: black;
+    max-width: 1280px;
+    max-height: 720px;
+    aspect-ratio: 16 / 9;
+}
+
+.video-bar {
+    position: absolute;
+    bottom: 0;
+    left: 12px;
+    right: 12px;
+    height: 48px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.watch-line {
+    position: absolute;
+    bottom: 48px;
+    left: 12px;
+    right: 12px;
+    height: 3px;
+    background-color: red;
+    cursor: pointer;
+    transition: margin 0.3s, height 0.3s;
+}
+
+.watch-line:hover {
+    margin: -2.5px 0;
+    height: 8px;
+}
+
+.video-bar-left-part {
+    display: flex;
+    align-items: center;
+}
+
+.video-bar-right-part {
+    display: flex;
+}
+
+.video-bar-icon {
+    width: 25px;
+
+}
+
+.play-button,
+.next-play-button,
+.volume-button,
+.autoplay-button,
+.subtitle-button,
+.settings-button,
+.mini-player-button,
+.big-screen-button,
+.full-size-button {
+    background-color: transparent;
+    border: none;
+    width: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.what-time {
+    color: rgba(255, 255, 255, 0.829);
+    font-family: Roboto, Arial;
+    font-size: 13px;
+    margin-left: 6px;
+}
+
+.play-button .tooltip,
+.volume-button .tooltip,
+.autoplay-button .tooltip,
+.subtitle-button .tooltip,
+.settings-button .tooltip,
+.mini-player-button .tooltip,
+.big-screen-button .tooltip,
+.full-size-button .tooltip {
+    position: absolute;
+    top: -55px;
+    padding: 8px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: Roboto, Arial;
+    color: white;
+    background-color: rgba(41, 41, 41, 0.9);
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.play-button .tooltip {
+    left: 0;
+}
+
+.full-size-button .tooltip {
+    right: 0;
+}
+
+.next-play-button .tooltip {
+    font-family: Roboto, Arial;
+    display: flex;
+    align-items: start;
+    justify-content: stretch;
+    background-color: rgba(41, 41, 41, 0.9);
+    position: absolute;
+    left: -45px;
+    top: -126px;
+    border-radius: 10px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.next-play-thumbnail {
+    position: relative;
+    display: flex;
+    justify-content: stretch;
+}
+
+.next-play-time {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: white;
+    background-color: rgba(41, 41, 41, 0.9);
+    font-size: 13px;
+    font-family: Roboto;
+    font-weight: 500;
+    padding: 4px;
+}
+
+.next-play-thumbnail-image {
+    width: 160px;
+    padding: 2px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.next-play-description {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    color: white;
+}
+
+.next-play-hotkey {
+    padding: 7px 10px 0 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(165, 165, 165);
+}
+
+.next-play-name {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0 10px;
+}
+
+.play-button:hover .tooltip,
+.volume-button:hover .tooltip,
+.autoplay-button:hover .tooltip,
+.subtitle-button:hover .tooltip,
+.settings-button:hover .tooltip,
+.mini-player-button:hover .tooltip,
+.big-screen-button:hover .tooltip,
+.full-size-button:hover .tooltip,
+.next-play-button:hover .tooltip {
+    opacity: 1;
+}
+
